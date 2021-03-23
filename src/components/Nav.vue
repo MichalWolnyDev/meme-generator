@@ -47,14 +47,14 @@ export default {
   },
   methods: {
     signOut(){
-      console.log("asdasd");
       firebase
         .auth()
         .signOut()
         .then(() => {
           this.$router.replace({
-            name: "/gallery"
+            name: "Login"
           })
+          console.log(this.user);
         })
     }
   }

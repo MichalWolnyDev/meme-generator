@@ -20,6 +20,8 @@ firebase.auth().onAuthStateChanged(user => {
   if (user) {
     store.dispatch("fetchUser", user);
   } else{
+    store.commit("setLoggedIn", false);
+    store.commit("setUser", null);
     console.log("Uzytkownik wylogowany");
   }
 })
