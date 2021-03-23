@@ -7,7 +7,7 @@
       </div>
       <div class="gallery__flex">
         <div class="gallery__item" v-for="(image, id) in tags.length > 0 ? getMemes.filter( e => e.tags.some( r => tags.includes(r))) : getMemes" :key="id" @click="sendImgIndex(id)">
-          <img class="gallery__img" :src="'http://localhost:2000/tmp/'+image.img" alt="">
+          <img class="gallery__img" :src="'http://localhost:2000/gallery/'+image.img" alt="">
         </div>
       </div>
     </div>

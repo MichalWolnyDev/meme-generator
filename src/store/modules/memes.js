@@ -24,7 +24,7 @@ const firebase_module = {
          commit('setMemes', employeesData);
 
          var finalArray = employeesData.map(function (obj) {
-           return "http://localhost:2000/tmp/"+obj.img;
+           return "http://localhost:2000/gallery/"+obj.img;
          });
          commit('setLightBoxImages', finalArray);
 
