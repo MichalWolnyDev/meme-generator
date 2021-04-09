@@ -66,7 +66,7 @@ body, html{
 }
 .container{
   max-width: 1450px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   @media(max-width: 1500px){
     padding: 0 1rem;
   }

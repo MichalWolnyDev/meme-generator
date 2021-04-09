@@ -1,19 +1,31 @@
 <template>
   <div class="">
     <div class="" v-if="user.loggedIn">
-      Zalogowano! <br>
-      Witaj {{ user.data.displayName }}!
+      <!-- Zalogowano! <br>
+      Witaj {{ user.data.displayName }}! -->
+      <div class="">
+        <div class="">
+          <ProfileCard/>
+        </div>
+      </div>
     </div>
     <div class="" v-else>
       Nie jesteś zalogowany!
     </div>
+
+
+
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
+import ProfileCard from '@/components/profile/ProfileCard.vue';
 
 export default {
+  components: {
+    ProfileCard
+  },
   computed: {
     ...mapGetters([
       'user'

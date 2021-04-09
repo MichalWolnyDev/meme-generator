@@ -8,6 +8,7 @@ import VueAxios from 'vue-axios'
 import VueCarousel from 'vue-carousel';
 import InputTag from 'vue-input-tag'
 
+
 import firebase from "firebase";
 
 // Your web app's Firebase configuration
