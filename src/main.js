@@ -29,10 +29,12 @@ firebase.auth().onAuthStateChanged(user => {
 
 
 Vue.prototype.$db = firebase.firestore();
+Vue.prototype.$fbStorage = firebase.storage();
 Vue.use(VCalendar, VueAxios, axios, VueCarousel);
 Vue.component('input-tag', InputTag)
 Vue.config.productionTip = false
 
+Vue.prototype.$store = store
 Vue.prototype.$axios = axios
 axios.defaults.baseURL = "api"
 
