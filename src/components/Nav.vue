@@ -19,12 +19,14 @@
         <div class="nav__menu">
           <template v-if="!user.loggedIn">
             <router-link to="/">Jarocoelho</router-link> |
+            <router-link to="/generator">Generator</router-link> |
             <router-link to="/gallery">Galeria</router-link> |
             <router-link to="/login">Zaloguj</router-link> |
             <router-link to="/register">Rejestracja</router-link>
           </template>
           <template v-else>
             <router-link to="/">Jarocoelho</router-link> |
+            <router-link to="/generator">Generator</router-link> |
             <router-link to="/gallery">Galeria</router-link> |
             <router-link to="/profile">{{ user.data.displayName }}</router-link> |
             <a href="" @click.prevent="signOut">Wyloguj</a>

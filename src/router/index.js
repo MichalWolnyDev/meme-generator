@@ -6,6 +6,7 @@ import Gallery from '../views/Gallery.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Profile from '../views/Profile.vue'
+import Generator from '../views/Makeameme.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile
+  },
+  {
+    path: '/generator',
+    name: 'Generator',
+    component: Generator
   },
 
 ]

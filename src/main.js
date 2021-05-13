@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VCalendar from 'v-calendar';
+import VCalendar from 'v-calendar'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import VueCarousel from 'vue-carousel';
+import VueCarousel from 'vue-carousel'
 import InputTag from 'vue-input-tag'
-
+import VueKonva from 'vue-konva'
 
 import firebase from "firebase";
 
@@ -31,6 +31,7 @@ firebase.auth().onAuthStateChanged(user => {
 Vue.prototype.$db = firebase.firestore();
 Vue.prototype.$fbStorage = firebase.storage();
 Vue.use(VCalendar, VueAxios, axios, VueCarousel);
+Vue.use(VueKonva)
 Vue.component('input-tag', InputTag)
 Vue.config.productionTip = false
 
